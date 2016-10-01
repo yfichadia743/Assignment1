@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GET HIP Week One Challenge</title>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>GET HIP Week One Assignment</h1>
+    <div class="well row">
+      <h2>Test Scores:</h2>
+      <p>Computer Science Top Five Test Scores Average</p>
+      <p>Enter each of your 6 test grades in the number inputs below, and click "Find Your Test Grade" to run get your score</p>
+      <form>
+        <div class="row">
+          <div class="col-md-2"><input type="number" id="num1" class="form-control"></div>
+          <div class="col-md-2"><input type="number" id="num2" class="form-control"></div>
+          <div class="col-md-2"><input type="number" id="num3" class="form-control"></div>
+          <div class="col-md-2"><input type="number" id="num4" class="form-control"></div>
+          <div class="col-md-2"><input type="number" id="num5" class="form-control"></div>
+          <div class="col-md-2"><input type="number" id="num6" class="form-control"></div>
+        </div>
+        <button onclick="problemOne(); return false;" class="btn btn-default">Find Your Test Grade</button>
+      </form>
+      </div>
+
+    <div class="well row">
+      <h2>GPA:</h2>
+      <p>GPA Checker</p>
+      <p>Each of the letter grades corresponds with the following number of points:</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Letter Grade</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>4.0</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>2.0</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>1.0</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>0.0</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Enter each of your 6 letter grades in the input boxes below, and click "Find Your GPA" to run find your GPA</p>
+      <form>
+        <div class="row">
+          <div class="col-md-2"><input type="text" id="grade1" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade2" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade3" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade4" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade5" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade6" class="form-control"></div>
+        </div>
+        <button onclick="problemTwo(); return false;" class="btn btn-default">Find Your GPA</button>
+      </form>
+      <div id="box" class="gradeBox"></div>
+      
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
